@@ -1,0 +1,1610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upgrade Your School</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Livvic:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="" crossorigin="anonymous" />
+<style>
+
+/* ============================ Hero Section =============================== */
+.ups_hero_bg {
+    /* background: #e2ddde; */
+    background:  #F5F4F0;
+    padding: 50px 0px;
+    cursor: pointer;
+}
+
+.ups_hero .hero_flex_wrap {
+    display: flex;
+    align-items: center;
+    margin: 0px -15px;
+    flex-wrap: nowrap;
+}
+
+.ups_hero .wrap_row {
+    width: 50%;
+    padding: 0px 15px;
+}
+
+.ups_hero .wrap_inner_img img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 56px;
+}
+
+.ups_hero .eyebrow{
+    display: inline-block;
+    background: #fff;
+    padding: 6px 10px;
+    border-radius: 999px;
+    font-family:Livvic, sans-serif;
+    font-weight: 600;
+    color: #6b7280;
+    font-size: 13px;
+}
+
+.ups_hero h1{
+color:rgb(11, 12, 33);
+font-family:Livvic, sans-serif;
+font-size:48px;
+font-weight:700;
+}
+
+#hero_text_rotate {
+    display: inline-block;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.ups_hero .hero_subheading {
+    font-size: 20px;
+    line-height: 1.3;
+    font-family: Livvic, sans-serif;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.ups_hero .stats_container {
+    margin-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.ups_hero .stat_item {
+    text-align: center;
+}
+
+.ups_hero .stat_icon {
+    font-size: 20px;
+    color: #2F7666; /* Kreedo theme green */
+    line-height: 1;
+}
+
+.ups_hero .stat_item p {
+    color: #2F3E46;
+    font-size: 18px;
+    font-family: Livvic, sans-serif;
+    font-weight: 700;
+    margin: 10px 0px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .ups_hero .stats_container {
+        gap: 25px;
+    }
+    .ups_hero .stat_icon {
+        font-size: 26px;
+    }
+    .ups_hero .stat_item p {
+        font-size: 16px;
+    }
+}
+
+
+
+/* ============================ Kreedo: Value + Impact Section =============================== */
+
+  /* Basic container */
+  .kreedo-upgrade-section { 
+    background: linear-gradient(90deg, rgba(255,245,240,0.9), rgba(255,250,248,0.95));
+    padding: 56px 0;
+    font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    color: #1f2540;
+  }
+  .kreedo-upgrade-section .container {
+    width: min(1100px, 92%);
+    margin: 0 auto;
+  }
+
+  /* Header */
+  .kreedo-header { text-align: center; max-width: 780px; margin: 0 auto 28px; }
+  .kreedo-header h2 { font-size: 22px; letter-spacing: .2px; margin: 0 0 8px; color: #2b2b59; }
+  .kreedo-header .sub { margin: 0; color: #5b5b7a; font-size: 14px; line-height: 1.5; }
+
+  /* Benefits grid */
+  .kreedo-benefits { 
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+    list-style: none;
+    padding: 18px 0 28px;
+    margin: 0;
+  }
+
+  .benefit-card {
+    background: linear-gradient(0deg, rgba(21,24,48,0.06), rgba(255,255,255,0.02));
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 150px;
+    box-shadow: 0 6px 18px rgba(37,40,70,0.04);
+    transition: transform .28s ease, box-shadow .28s ease;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .benefit-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 18px 40px rgba(37,40,70,0.07);
+  }
+
+  .benefit-card .icon {
+    width: 52px;
+    height: 52px;
+    display: inline-grid;
+    place-items: center;
+    border-radius: 10px;
+    background: linear-gradient(180deg, rgba(255,255,255,0.6), rgba(250,246,243,0.8));
+    color: #ff8c42; /* accent color */
+  }
+
+  .benefit-card h3 {
+    font-size: 16px;
+    margin: 0;
+    color: #1f2540;
+  }
+  .benefit-card p {
+    font-size: 13px;
+    color: #5b5b7a;
+    margin: 0;
+    line-height: 1.45;
+    margin-top: 4px;
+    flex: 1;
+  }
+
+
+  /* Responsive */
+  @media (max-width: 920px) {
+    .kreedo-benefits { grid-template-columns: repeat(2, 1fr); }
+    .impact-row { grid-template-columns: repeat(2, 1fr); }
+    .kreedo-header h2 { font-size: 20px; }
+  }
+
+  @media (max-width: 560px) {
+    .kreedo-benefits { grid-template-columns: 1fr; }
+    .impact-row { grid-template-columns: 1fr; }
+    .benefit-card { padding: 16px; }
+    .kreedo-header .sub { font-size: 13px; }
+  }
+
+/* ============================ Kreedo in Numbers Section =============================== */
+
+/* Dark Mode Auto */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0f0f0f;
+    --card-bg: #1a1a1a;
+    --text: #ffffff;
+    --subtext: #bbbbbb;
+    --glow: rgba(255,185,1,0.8);
+  }
+}
+
+.numbers-title {
+  font-size: 34px;
+  font-weight: 800;
+  margin-bottom: 10px;
+  color: var(--text);
+}
+
+.numbers-subtitle {
+  color: var(--subtext);
+  margin-bottom: 40px;
+}
+
+.numbers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.number-card {
+  background: var(--card-bg);
+  padding: 35px 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+  transition: 0.4s ease;
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+/* Glow Hover Effect */
+.number-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 0 18px var(--glow), 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.number-card.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.lottie-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 12px;
+}
+
+.counter {
+  font-size: 30px;
+  font-weight: 800;
+  margin: 5px 0;
+  color: var(--text);
+}
+
+.number-card p {
+  margin: 0;
+  font-size: 16px;
+  color: var(--subtext);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .numbers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 500px) {
+  .numbers-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ============================ Transformation Journey Section =============================== */
+
+
+/* SECTION */
+
+.kreedo-journey h2 {
+  font-size: 38px;
+  font-weight: 700;
+  color: #222;
+    font-family: Livvic, sans-serif;
+}
+
+.kreedo-journey h2 span {
+  color: #5a42f5;
+}
+
+.journey-subtitle {
+  max-width: 700px;
+  margin: 15px auto 50px;
+  font-size: 18px;
+  color: #555;
+}
+
+/* Step Card */
+.journey-step {
+  background: #fff;
+  padding: 25px 22px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.06);
+  transition: 0.3s ease;
+}
+
+/* Hover */
+.journey-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 25px rgba(90, 66, 245, 0.35);
+}
+
+
+/* Titles */
+.journey-step h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #222;
+}
+
+/* Paragraph */
+.journey-step p {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .journey-steps::before {
+    left: 10px;
+  }
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+  .kreedo-journey {
+    background: #0d0d12;
+  }
+}
+
+
+
+
+/* ============================ Why Upgrade (Problems → Solutions) Section =============================== */
+
+.upgrade_benefits {
+  padding: 80px 0;
+   background: linear-gradient(90deg, rgba(255, 245, 240, 0.9), rgba(255, 250, 248, 0.95));
+    font-family: Livvic, sans-serif;
+}
+
+.upgrade_benefits .upgrade-title {
+  font-size: 36px;
+  font-weight: 700;
+  color: #1B1C4F;
+  margin-bottom: 10px;
+  font-family: Livvic, sans-serif;
+}
+
+.upgrade-subtitle {
+  font-size: 16px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  line-height: 1.6;
+}
+
+/* GRID */
+.upgrade-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* BOXES */
+.upgrade-box {
+  padding: 35px;
+  background: #ffffff;
+  box-shadow: 0px 10px 25px rgba(0,0,0,0.05);
+  border-radius: 18px;
+  text-align: left;
+  transition: 0.3s ease;
+}
+
+.upgrade-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0,0,0,0.08);
+}
+
+.upgrade-box h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: #1B1C4F;
+}
+
+.upgrade-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.upgrade-box ul li {
+  font-size: 16px;
+  margin: 12px 0;
+  color: #444;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* COLORS */
+.problems {
+  border-left: 6px solid #ff4e4e;
+}
+
+.solutions {
+  border-left: 6px solid #4CAF50;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .upgrade-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upgrade-title {
+    font-size: 28px;
+  }
+}
+
+/* ============================ Inside a Kreedo Classroom (Showcase) =============================== */
+.classroom-showcase {
+    padding: 80px 20px;
+    background: #ffffff;
+    text-align: center;
+}
+
+.classroom-showcase h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: #222;
+}
+
+.classroom-showcase h2 span {
+    color: #5a42f5;
+}
+
+.classroom-subtitle {
+    max-width: 700px;
+    margin: 15px auto 50px;
+    font-size: 17px;
+    color: #555;
+}
+
+.classroom-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.classroom-item {
+    background: #fff;
+    padding: 25px;
+    border-radius: 18px;
+    box-shadow: 0px 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s ease;
+}
+
+.classroom-item:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 0px 25px rgba(90,66,245,0.3);
+}
+
+.classroom-item lottie-player {
+    height: 140px;
+    margin-bottom: 15px;
+}
+
+.classroom-item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #222;
+}
+
+.classroom-item p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .classroom-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .classroom-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* ============================  Success Stories Section =============================== */
+
+/* ============================  Success Stories Section =============================== */
+
+.success-section {
+  padding: 70px 0;
+  background: #f7f9fc;
+}
+
+.success-title {
+  text-align: center;
+  font-size: 38px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.success-subtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 950px;
+  margin: auto;
+  overflow: hidden;
+  min-height: 350px;
+}
+
+/* Smooth Fade + Slide Animation */
+.slide {
+  position: absolute;
+  width: 100%;
+  opacity: 0;
+  transform: translateX(40px);
+  transition: opacity 0.8s ease, transform 0.8s ease;
+  pointer-events: none;
+}
+
+.slide.active {
+  opacity: 1;
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.story-wrap {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  background: #fff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 35px rgba(0,0,0,0.08);
+}
+
+.story-img {
+  width: 40%;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.story-content {
+  width: 60%;
+}
+
+.story-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.story-author {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #005bbb;
+}
+
+/* Arrows */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  font-size: 36px;
+  cursor: pointer;
+  color: #444;
+  padding: 10px;
+  transform: translateY(-50%);
+  transition: 0.3s ease;
+  z-index: 10;
+  user-select: none;
+}
+
+.prev:hover, .next:hover {
+  color: #005bbb;
+}
+
+.prev { left: -50px; }
+.next { right: -50px; }
+
+/* Dots */
+.dots {
+  position: absolute;
+  bottom: 30px;      /* you can adjust */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  cursor: pointer;
+}
+
+
+.dots span {
+  width: 12px;
+  height: 12px;
+  background: #c2c2c2;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.dots .active-dot {
+  background: #005bbb;
+  transform: scale(1.3);
+}
+
+
+.dots .active-dot {
+  background: #005bbb;
+  transform: scale(1.32);
+}
+
+/* Responsive */
+@media(max-width: 768px) {
+
+  .story-wrap {
+    flex-direction: column;
+    text-align: center;
+    padding: 25px;
+  }
+
+  .story-img {
+    width: 100%;
+  }
+
+  .story-content {
+    width: 100%;
+  }
+
+  .prev { left: 10px; }
+  .next { right: 10px; }
+}
+
+
+
+
+
+
+</style>
+</head>
+<body>
+
+<section>
+    <div class="top-bar">
+        Call us @ +91 1800 4120 1580
+    </div>
+</section>
+<!-- ============================ navbar Section =============================== -->
+<section>
+  <div class="container">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Spacece Logo">
+        </div>
+
+        <ul class="nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Programs -->
+            <li class="dropdown">
+                <a href="#">Programs <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./Programs/start_your_school.html">Start Your School</a></li>
+                    <li><a href="./Programs/upgrade_your_school.html">Upgrade Your School</a></li>
+                    <li><a href="./Programs/parents_toddler_program.html">Parents & Toddler Program</a></li>
+                </ul>
+            </li>
+
+            <!-- PTTC -->
+            <li><a href="../PTTC.html">PTTC</a></li>
+
+            <!-- Admissions -->
+            <li class="dropdown">
+                <a href="Admission.html">Admissions</a>
+            </li>
+
+            <!-- About Us -->
+            <li class="dropdown">
+                <a href="Aboutus.html">About Us <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./Aboutus/Contactus.html">Contact Us</a></li>
+                    <li><a href="./Aboutus/Our_vision.html">Our Vision & Mission</a></li>
+                    <li><a href="./Aboutus/Our_Team.html">Our Team</a></li>
+                </ul>
+            </li>
+
+            <!-- Resources -->
+            <li class="dropdown">
+                <a href="Resources.html">Resources <i class="fa-solid fa-angle-down"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="./Resources/Blogs.html">Blogs</a></li>
+                    <li><a href="./Resources/Parent_guides.html">Parent Guides</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+
+        <!-- Enquire Button -->
+        <a class="enquire-btn" href="javascript:void(0)" onclick="openPopup()">Enquire Now</a>
+
+        <!-- POPUP OVERLAY -->
+        <div class="popup-overlay" id="popup">
+            <div class="popup-box">
+
+                <!-- Close Button -->
+                <button class="close-popup" onclick="closePopup()">×</button>
+
+                <!-- ZOHO FORM STARTS HERE -->
+                <form action="https://forms.zohopublic.com/kidoenterprises/form/KreedoWebsiteContactUsForm/formperma/UxHWZ_P2f6BEfg5Q5jJFP8txtfC_XkHyoDowK3rbSIA/htmlRecords/submit"
+                    name="form" method="POST" id="form" accept-charset="UTF-8" class="enquire_form">
+
+
+                    <h2>Please fill out the form below and we will respond within 24hrs</h2>
+
+                    <!-- Hidden UTM Fields -->
+                    <input type="hidden" name="zf_referrer_name">
+                    <input type="hidden" name="zf_redirect_url">
+                    <input type="hidden" name="zc_gad">
+                    <input type="hidden" name="utm_source" id="utm_source">
+                    <input type="hidden" name="utm_medium" id="utm_medium">
+                    <input type="hidden" name="utm_campaign" id="utm_campaign">
+                    <input type="hidden" name="utm_device" id="utm_device">
+                    <input type="hidden" name="utm_Adgroup" id="utm_Adgroup">
+                    <input type="hidden" name="gclid" id="gclid">
+                    <input type="hidden" name="referrername" id="referrername">
+
+                    <!-- Inputs -->
+                    <input type="text" name="SingleLine" placeholder="Enter your name" required>
+                    <input type="email" name="Email" placeholder="Enter Your Email" required>
+                    <input type="text" name="PhoneNumber_countrycode" pattern="[0-9]{10}" placeholder="Number" required>
+
+                    <select name="Dropdown" required>
+                        <option value="">Select State</option>
+                        <option>Maharashtra</option>
+                        <option>Gujarat</option>
+                    </select>
+
+                    <select name="Dropdown1" required>
+                        <option value="">Category</option>
+                        <option value="Individual">Starting a new school</option>
+                        <option value="K-12 School">Upgrading my school</option>
+                        <option value="Teacher">Interested in Teacher Training Course</option>
+                    </select>
+
+                    <textarea name="MultiLine" placeholder="Message"></textarea>
+
+                    <!-- Captcha -->
+                    <span id="captchaText">IqOmSl</span>
+                    <input type="text" placeholder="Enter the above text" required>
+
+                    <!-- Checkbox -->
+                    <label class="check-label">
+                        <input type="checkbox" checked>
+                        Please contact me via WhatsApp, SMS, Phone, and Email
+                    </label>
+
+                    <!-- Submit -->
+                    <button class="zf-submitColor">Submit</button>
+                </form>
+                <!-- 🔥 ZOHO FORM ENDS HERE -->
+            </div>
+        </div>
+
+
+        <!-- Mobile Menu Icon -->
+        <!-- <button class="menu-btn" onclick="openMenu()">☰</button> -->
+        <button class="menu-btn">☰</button>
+    </nav>
+
+    <!-- BLACK OVERLAY -->
+    <!-- <div class="overlay" onclick="closeMenu()"></div> -->
+     <div class="overlay"></div>
+
+    <!-- SIDEBAR -->
+    <nav class="menu_btn_info">
+        <button class="close-btn">×</button>
+
+        <div class="slider_logo">
+            <img src="./assets/logo.png" alt="Spacece Logo">
+        </div>
+        <ul class="slider_menu nav-links">
+
+            <li><a href="index.html">Home</a></li>
+
+            <!-- Programs -->
+            <li class="slider_menu dropdown">
+                <a href="#">Programs <i class="fa-solid fa-angle-right"></i></a>
+                <ul class="slider_menu dropdown-menu">
+                    <li><a href="./Programs/start_your_school.html">Start Your School</a></li>
+                    <li><a href="./Programs/upgrade_your_school.html">Upgrade Your School</a></li>
+                    <li><a href="./Programs/parents_toddler_program.html">Parents & Toddler Program</a></li>
+                </ul>
+            </li>
+
+            <!-- PTTC -->
+            <li><a href="PTTC.html">PTTC</a></li>
+
+            <!-- Admissions -->
+            <li class="sliderbar_menu dropdown">
+                <a href="Admission.html">Admissions</a>
+            </li>
+
+            <!-- About Us -->
+            <li class="sliderbar_menu dropdown">
+                <a href="./Aboutus/Aboutus.html">About Us <i class="fa-solid fa-angle-right"></i></a>
+                <ul class="sliderbar_menu dropdown-menu">
+                    <li><a href="./Aboutus/Contactus.html">Contact Us</a></li>
+                    <li><a href="./Aboutus/Our_vision.html">Our Vision & Mission</a></li>
+                    <li><a href="./Aboutus/Our_Team.html">Our Team</a></li>
+                </ul>
+            </li>
+
+            <!-- Resources -->
+            <li class="sliderbar_menu dropdown">
+                <a href="#">Resources <i class="fa-solid fa-angle-right"></i></a>
+                <ul class="sliderbar_menu dropdown-menu">
+                    <li><a href="./Resources/Blogs.html">Blogs</a></li>
+                    <li><a href="./Resources/Parent_guides.html">Parent Guides</a></li>
+                </ul>
+            </li>
+
+
+        </ul>
+    </nav>
+  </div>
+</section>
+
+
+<!-- ============================ Hero Section =============================== -->
+
+<section>
+    <div class="ups_hero_bg">
+        <div class="container">
+            <div class="ups_hero">
+                <div class="hero_flex_wrap">
+                    <div class="wrap_row">
+                        <div class="wrap_inner_info">
+                            <div class="eyebrow">School Upgrade</div>
+                                <h1 class="hero_heading">
+                                    Inspire Better <br>
+                                    <span id="hero_text_rotate" style="color:#2F7666;">Learning with Kreedo</span>
+                                </h1>
+                                <p class="hero_subheading">
+                                    Bring innovation to your classrooms with Kreedo’s proven learning system, 
+                                    designed to boost engagement and improve results.
+                                </p>
+                                <div class="stats_container">
+
+                                    <div class="stat_item">
+                                        <i class="fa-solid fa-school stat_icon"></i>
+                                        <p>3500+ Schools</p>
+                                    </div>
+
+                                    <div class="stat_item">
+                                        <i class="fa-solid fa-children stat_icon"></i>
+                                        <p>7L+ Children</p>
+                                    </div>
+
+                                    <div class="stat_item">
+                                        <i class="fa-solid fa-chart-line stat_icon"></i>
+                                        <p>50% Better Outcomes</p>
+                                    </div>
+
+                                </div>
+                                <div class="hero_enquire_btn">
+                                    <!-- Enquire Button -->
+                                    <a class="enquire-btn" href="javascript:void(0)" onclick="openPopup()">Enquire Now</a>
+                                </div>
+
+                        </div>
+                    </div>
+                    <div class="wrap_row">
+                        <div class="wrap_inner_img">
+                            <img src="../assets/hero.jpg" alt="Classroom transformation" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ================== Kreedo: Value + Impact Section (drop this after your hero) ================= -->
+
+<section class="kreedo-upgrade-section" aria-labelledby="kreedo-upgrade-title">
+  <div class="container">
+    <!-- Title / Intro -->
+      <h2 id="kreedo_upgrade_title">Why upgrade with Kreedo?</h2>
+      <p class="sub">Transform classrooms into activity-first learning spaces with Kreedo’s complete 6T framework — ready tools, training and technology for measurable improvement.</p>
+
+    <!-- Benefit Grid -->
+    <ul class="kreedo-benefits" role="list">
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- target icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="12" r="9" stroke-opacity="0.18"/>
+            <circle cx="12" cy="12" r="5"/>
+            <circle cx="12" cy="12" r="2" fill="currentColor"/>
+          </svg>
+        </div>
+        <h3>50% Better Outcomes</h3>
+        <p>Activity-based kits + structured lessons designed to accelerate learning outcomes.</p>
+      </li>
+
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- puzzle icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M3 8v3a2 2 0 0 0 2 2h3v-1a2 2 0 0 1 2-2h1v-4H9a2 2 0 0 0-2 2V8H5a2 2 0 0 0-2 0z" stroke-opacity="0.18"/>
+            <rect x="6" y="6" width="12" height="12" rx="2" />
+          </svg>
+        </div>
+        <h3>Complete 6T Framework</h3>
+        <p>Toys, Theory, Timetable, Training, Technology & Teamwork — everything included.</p>
+      </li>
+
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- teacher icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="12" cy="7" r="2" />
+            <path d="M5 20c1.5-3 4.5-4 7-4s5.5 1 7 4" stroke-opacity="0.18"/>
+            <path d="M3 21s3-4 9-4 9 4 9 4" />
+          </svg>
+        </div>
+        <h3>Teacher Training</h3>
+        <p>On-ground sessions + digital modules to build confidence and classroom control.</p>
+      </li>
+
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- box icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <path d="M2 7l10-4 10 4-10 4L2 7z" stroke-opacity="0.18"/>
+            <path d="M2 7v9l10 4 10-4V7" />
+            <path d="M12 3v18" stroke-opacity="0.18"/>
+          </svg>
+        </div>
+        <h3>Ready-to-Use Kits</h3>
+        <p>Curriculum boxes, daily activity planners and assessment sheets — plug & play for teachers.</p>
+      </li>
+
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- device icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <rect x="3" y="4" width="18" height="14" rx="2" stroke-opacity="0.18"/>
+            <path d="M7 20h10" />
+          </svg>
+        </div>
+        <h3>Technology & App</h3>
+        <p>Lesson plans, attendance, progress tracking and digital content for continuous monitoring.</p>
+      </li>
+
+      <li class="benefit-card">
+        <div class="icon" aria-hidden="true">
+          <!-- group icon -->
+          <svg viewBox="0 0 24 24" width="36" height="36" fill="none" stroke="currentColor" stroke-width="1.6">
+            <circle cx="9" cy="8" r="2" />
+            <circle cx="16" cy="8" r="2" />
+            <path d="M4 20c1.5-3 6-4 8-4s6.5 1 8 4" stroke-opacity="0.18"/>
+          </svg>
+        </div>
+        <h3>Classroom Transformation</h3>
+        <p>Layout, learning corners and teacher workflows to maximize engagement.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================ Kreedo in Numbers Section =============================== -->
+
+<section class="kreedo-numbers">
+  <div class="container">
+
+    <h2 class="numbers-title">Kreedo in Numbers</h2>
+    <p class="numbers-subtitle">A decade of transforming classrooms with joyful, activity-based learning.</p>
+
+    <div class="numbers-grid">
+
+      <!-- CARD 1 -->
+      <div class="number-card">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_u4yrau.json" background="transparent" speed="1" loop autoplay class="lottie-icon"></lottie-player>
+        <h3 class="counter" data-target="3500">0</h3>
+        <p>Schools Empowered</p>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="number-card">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_j1adxtyb.json" background="transparent" speed="1" loop autoplay class="lottie-icon"></lottie-player>
+        <h3 class="counter" data-target="700000">0</h3>
+        <p>Children Impacted</p>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="number-card">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_svy4ivvy.json" background="transparent" speed="1" loop autoplay class="lottie-icon"></lottie-player>
+        <h3 class="counter" data-target="50">0</h3>
+        <p>Better Learning Outcomes</p>
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="number-card">
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_1pxqjqps.json" background="transparent" speed="1" loop autoplay class="lottie-icon"></lottie-player>
+        <h3 class="counter" data-target="40">0</h3>
+        <p>Cities Reached</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================  Transformation Journey Section =============================== -->
+
+<section class="journey_bg">
+    <div class="container">
+        <div class="journey-container">
+            <h2>Transformation Journey</h2>
+            <p class="journey-subtitle">
+            How Kreedo transforms your school step-by-step with a proven, structured implementation approach.
+            </p>
+
+            <div class="journey-steps">
+
+            <!-- Step 1 -->
+            <div class="journey-step">
+                <h3>Assessment & Planning</h3>
+                <p>We understand your school’s needs and create a customized implementation roadmap.</p>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="journey-step">
+                <h3>Teacher Orientation</h3>
+                <p>Teachers receive initial training to get familiar with activity-based learning tools.</p>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="journey-step">
+                <h3>Classroom Setup</h3>
+                <p>Kreedo material kits are installed and arranged to support structured learning.</p>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="journey-step">
+                <h3>Continuous Training</h3>
+                <p>Teachers receive ongoing guidance, micro-learning modules, and lesson plan support.</p>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="journey-step">
+                <h3>Tracking & Improvement</h3>
+                <p>Student progress is monitored, and schools receive continuous improvement support.</p>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="journey-step">
+                <h3>Long-Term Partnership</h3>
+                <p>Kreedo continues supporting your school with updates, refresher training, and periodic reviews to ensure sustained success.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================ Why Upgrade (Problems → Solutions) Section =============================== -->
+<section class="upgrade_benefits">
+  <div class="container>
+    
+    <h2 class="upgrade-title">Why Upgrade Your School?</h2>
+    <p class="upgrade-subtitle">
+      Identify the challenges your school faces and see how Kreedo transforms classrooms  
+      with activity-based learning, structured teaching, and measurable outcomes.
+    </p>
+
+    <div class="upgrade-grid">
+
+      <!-- PROBLEMS -->
+      <div class="upgrade-box problems">
+        <h3>Challenges Schools Face</h3>
+
+        <ul>
+          <li>❌ Low classroom engagement</li>
+          <li>❌ Too much rote-learning & worksheets</li>
+          <li>❌ Teachers struggle with planning & execution</li>
+          <li>❌ Parents dissatisfied with child progress</li>
+          <li>❌ No structure or quality consistency</li>
+        </ul>
+      </div>
+
+      <!-- SOLUTIONS -->
+      <div class="upgrade-box solutions">
+        <h3>How Kreedo Helps</h3>
+
+        <ul>
+          <li>✔ Activity-based learning for faster understanding</li>
+          <li>✔ Daily structured lesson flows</li>
+          <li>✔ Teacher mentoring & observation support</li>
+          <li>✔ Improved parent communication</li>
+          <li>✔ 50% better learning outcomes</li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================ Inside a Kreedo Classroom (Showcase) Section =============================== -->
+<section class="classroom-showcase">
+    <div class="container">
+        <h2>Inside a <span>Kreedo Classroom</span></h2>
+        <p class="classroom-subtitle">
+            A structured, child-centric environment designed for hands-on learning, exploration, 
+            and meaningful engagement.
+        </p>
+
+        <div class="classroom-grid">
+
+            <!-- Box 1 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets7.lottiefiles.com/packages/lf20_5ngs2ksb.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Structured Learning Corners</h3>
+                <p>Dedicated math, language, and sensorial spaces arranged for self-learning.</p>
+            </div>
+
+            <!-- Box 2 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets4.lottiefiles.com/private_files/lf30_saczjnsu.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Hands-On Learning Kits</h3>
+                <p>Children interact with activity materials that make learning fun and concrete.</p>
+            </div>
+
+            <!-- Box 3 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets1.lottiefiles.com/packages/lf20_w51pcehl.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Visual Learning Aids</h3>
+                <p>Charts and concept cards guide students through step-by-step learning paths.</p>
+            </div>
+
+            <!-- Box 4 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets9.lottiefiles.com/packages/lf20_t24tpvcu.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Freedom to Explore</h3>
+                <p>Children choose activities independently, encouraging curiosity and confidence.</p>
+            </div>
+
+            <!-- Box 5 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets2.lottiefiles.com/packages/lf20_vnikrcia.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Collaborative Learning</h3>
+                <p>Students work together in small groups to boost teamwork and communication.</p>
+            </div>
+
+            <!-- Box 6 -->
+            <div class="classroom-item">
+                <lottie-player 
+                    src="https://assets6.lottiefiles.com/packages/lf20_1pxqjqps.json" 
+                    background="transparent" speed="1" loop autoplay>
+                </lottie-player>
+                <h3>Organized Material Shelves</h3>
+                <p>Materials are neatly arranged so children can access and return them easily.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================  Success Stories Section =============================== -->
+
+<section class="success-section">
+  <div class="container">
+    <h2 class="success-title">Success Stories</h2>
+    <p class="success-subtitle">Real stories from schools transformed by Kreedo</p>
+
+    <div class="slider">
+
+      <!-- Slide 1 -->
+      <div class="slide active">
+        <div class="story-wrap">
+          <img src="https://via.placeholder.com/400x300" class="story-img" alt="School Image">
+          <div class="story-content">
+            <p class="story-text">
+              “After implementing Kreedo, classroom engagement increased dramatically.  
+              Our teachers now follow a structured, enjoyable learning approach.”
+            </p>
+            <h3 class="story-author">Bright Future School, Pune</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="slide">
+        <div class="story-wrap">
+          <img src="https://via.placeholder.com/400x300" class="story-img" alt="School Image">
+          <div class="story-content">
+            <p class="story-text">
+              “Parents started seeing real improvements.  
+              Admissions increased because of Kreedo’s activity-based learning.”
+            </p>
+            <h3 class="story-author">St. Mary’s Academy, Bengaluru</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="slide">
+        <div class="story-wrap">
+          <img src="https://via.placeholder.com/400x300" class="story-img" alt="School Image">
+          <div class="story-content">
+            <p class="story-text">
+              “Teacher workload reduced and learning became structured.  
+              Kreedo is a complete game changer for our school.”
+            </p>
+            <h3 class="story-author">Golden Valley School, Mumbai</h3>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrows -->
+      <span class="prev">&#10094;</span>
+      <span class="next">&#10095;</span>
+
+      <!-- Dots -->
+      <div class="dots"></div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Lottie Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+<!-- Lottie Script -->
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+
+<!-- ============================  Footer  =============================== -->
+<footer class="footer">
+    <div class="container">
+      <div class="footer-info">
+        <!-- Column 1: Logo + Social -->
+        <div class="footer-section">
+            <img src="assets/logo.png" class="footer-logo" alt="Preschool Logo">
+
+            <p class="footer-text">
+                Building bright futures with joyful learning.
+            </p>
+
+            <!-- Google Map -->
+            <div class="footer-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.713390921391!2d73.80806407371841!3d18.45131787128889!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc29513dc000001%3A0x6bcacb06efbe645c!2sSpacECE%20INDIA%20FOUNDATION!5e0!3m2!1sen!2sin!4v1764842317194!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+
+
+        <!-- Column 2: Contact Form (Parents Admission Inquiry) -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+
+            <form class="footer-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Phone">
+                <select>
+                    <option>Select Program</option>
+                    <option>Playgroup</option>
+                    <option>Nursery</option>
+                    <option>Jr. KG</option>
+                    <option>Sr. KG</option>
+                </select>
+                <textarea placeholder="Message"></textarea>
+                <button type="submit" class="footer-btn">Submit</button>
+            </form>
+        </div>
+
+        <!-- Column 3: Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <div class="link-wrap">
+              <ul class="footer-links">
+                <li><a href="#">About Preschool</a></li>
+                <li><a href="#">Our Programs</a></li>
+                <li><a href="#">Our Vision</a></li>
+              </ul>
+              <ul class="footer-links">
+                <li><a href="#">Parent Resources</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="footer-social">
+              <a href="https://www.facebook.com/SpacECE/"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="https://www.twitter.com/SpacECE/"><i class="fa-brands fa-twitter"></i></a>
+              <a href="https://www.instagram.com/SpacECE/"><i class="fa-brands fa-instagram"></i></a>
+              <a href="https://www.youtube.com/SpacECE/"><i class="fa-brands fa-youtube"></i></a>
+              <a href="https://www.Whatsapp.com/SpacECE/"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <!-- Bottom -->
+    <div class="footer-bottom">
+        © 2025 Your Preschool Name — All Rights Reserved
+    </div>
+</footer>
+
+
+
+
+
+
+
+<!-- ============================  Dropdown button  =============================== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const dropdown = document.querySelector(".dropdown > a");
+    const dropdownMenu = document.querySelector(".dropdown-menu");
+
+    dropdown.addEventListener("click", function (e) {
+        e.preventDefault(); 
+        dropdownMenu.style.display =
+            dropdownMenu.style.display === "block" ? "none" : "block";
+    });
+
+    document.addEventListener("click", function (e) {
+        if (!dropdown.contains(e.target) && !dropdownMenu.contains(e.target)) {
+            dropdownMenu.style.display = "none";
+        }
+    });
+});
+</script>
+
+<!-- ============================ Slider Menu Button =============================== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menu = document.querySelector(".menu_btn_info");  // RIGHT SIDEBAR
+    const overlay = document.querySelector(".overlay");     // DARK BACKGROUND
+    const menuBtn = document.querySelector(".menu-btn");    // ☰ BUTTON
+    const closeBtn = document.querySelector(".close-btn");  // CROSS BUTTON
+
+    // OPEN MENU
+    menuBtn.addEventListener("click", () => {
+        menu.classList.add("active");
+        overlay.classList.add("show");
+    });
+
+    // CLOSE MENU (X button)
+    closeBtn.addEventListener("click", () => {
+        menu.classList.remove("active");
+        overlay.classList.remove("show");
+    });
+
+    // CLOSE MENU when clicking outside
+    overlay.addEventListener("click", () => {
+        menu.classList.remove("active");
+        overlay.classList.remove("show");
+    });
+
+});
+</script>
+
+<!-- ============================ Slider Dropdown Menu  =============================== -->
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    // MOBILE MENU OPEN
+    const menuBtn = document.querySelector(".menu-btn");
+    const sidebar = document.querySelector(".menu_btn_info");
+    const overlay = document.querySelector(".overlay");
+    const closeBtn = document.querySelector(".close-btn");
+
+    menuBtn.addEventListener("click", () => {
+        sidebar.classList.add("active");
+        overlay.classList.add("show");
+    });
+
+    closeBtn.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("show");
+    });
+
+    overlay.addEventListener("click", () => {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("show");
+    });
+
+    // ⭐ MOBILE DROPDOWN OPEN/CLOSE ON CLICK
+    const dropdowns = document.querySelectorAll(".menu_btn_info .dropdown");
+
+    dropdowns.forEach(drop => {
+        drop.addEventListener("click", function (e) {
+            e.stopPropagation();
+            this.classList.toggle("open");
+        });
+    });
+});
+</script>
+
+<!-- ============================ Equairy form popup-box =============================== -->
+<script>
+    function openPopup() {
+        document.getElementById("popup").style.display = "block";
+        document.body.classList.add("no-scroll");
+    }
+    function closePopup() {
+        document.getElementById("popup").style.display = "none";
+        document.body.classList.remove("no-scroll");
+    }
+</script>
+
+<!-- ============================  Hero  =============================== -->
+<script>
+const words = [
+    { text: "Learning with Kreedo", color: "#2F7666" },
+    { text: "Classrooms with Kreedo", color: "#2F7666" },
+    { text: "Schools with Kreedo", color: "#2F7666" }
+];
+
+let index = 0;
+
+function changeText() {
+    const textElement = document.getElementById("hero_text_rotate");
+
+    // Fade out + slide slightly down
+    textElement.style.opacity = 0;
+    textElement.style.transform = "translateY(10px)";
+
+    setTimeout(() => {
+        index = (index + 1) % words.length;
+        textElement.innerText = words[index].text;
+        textElement.style.color = words[index].color;
+
+        // Fade in + slide up smoothly
+        textElement.style.opacity = 1;
+        textElement.style.transform = "translateY(0)";
+    }, 600);
+}
+
+setInterval(changeText, 2500);
+</script>
+
+<!-- ============================ Kreedo in Numbers Scroll Animation Script  =============================== -->
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<script>
+  const cards = document.querySelectorAll(".number-card");
+  const counters = document.querySelectorAll(".counter");
+
+  function showCards() {
+    cards.forEach(card => {
+      if (card.getBoundingClientRect().top < window.innerHeight - 100) {
+        card.classList.add("show");
+      }
+    });
+  }
+
+  function startCounter() {
+    counters.forEach(counter => {
+      let target = +counter.getAttribute("data-target");
+      let count = 0;
+      let speed = target / 200;
+
+      function update() {
+        if (count < target) {
+          count += speed;
+          counter.innerText = Math.floor(count).toLocaleString();
+          requestAnimationFrame(update);
+        } else {
+          counter.innerText = target.toLocaleString();
+        }
+      }
+
+      if (counter.getBoundingClientRect().top < window.innerHeight - 100) {
+        update();
+      }
+    });
+  }
+
+  window.addEventListener("scroll", () => {
+    showCards();
+    startCounter();
+  });
+
+  showCards();
+  startCounter();
+</script>
+
+<!-- ============================  Success Stories =============================== -->
+<script>
+let current = 0;
+const slides = document.querySelectorAll(".slide");
+const dotsContainer = document.querySelector(".dots");
+
+// Create dots dynamically
+slides.forEach((_, i) => {
+  const dot = document.createElement("span");
+  dot.addEventListener("click", () => showSlide(i));
+  dotsContainer.appendChild(dot);
+});
+
+const dots = dotsContainer.querySelectorAll("span");
+
+function showSlide(index) {
+  slides[current].classList.remove("active");
+  dots[current].classList.remove("active-dot");
+
+  current = index;
+
+  slides[current].classList.add("active");
+  dots[current].classList.add("active-dot");
+}
+
+// Initialize first slide
+showSlide(0);
+
+// Arrow controls
+document.querySelector(".next").onclick = () => {
+  showSlide((current + 1) % slides.length);
+};
+
+document.querySelector(".prev").onclick = () => {
+  showSlide((current - 1 + slides.length) % slides.length);
+};
+
+// Auto-slide
+setInterval(() => {
+  showSlide((current + 1) % slides.length);
+}, 5000);
+</script>
+
+
+
+
+
+
+
+
+</body>
+</html>
